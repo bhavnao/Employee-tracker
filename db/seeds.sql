@@ -11,10 +11,9 @@ VALUES
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    
-    ('Technical Lead', 120000, 1),
-    ('Software Engineer', 100000, 1),
     ('Account Manager', 140000, 2),
+    ('Technical Lead', 120000, 1),
+    ('Software Engineer', 100000, 1),    
     ('Accountant', 100000, 2),
     ('Sales Lead', 100000, 3),
     ('Salesperson', 80000, 3),
@@ -24,14 +23,15 @@ VALUES
 
 
 INSERT INTO employee
-    (first_name, last_name, role_id, manager_id)
+    (id,first_name, last_name, role_id, manager_id)
 VALUES
-    ('John', 'Brown', 1, 3),
-    ('Mike', 'Allen', 2, 3),
-    ('Raymond','Blanks', 3, NULL),
-    ('Pritesh', 'Shah', 4, 3),
-    ('Nicole', 'Williams',5, NULL),
-    ('Ashley', 'Quiroz', 6, 5),
-    ('Sarah', 'Landers', 7, NULL),
-    ('Vikas', 'Agarwal', 8, 7),
-    ('Christina','James',9,NULL);
+    (1,'Raymond','Blanks', 1, NULL),
+    (2,'John', 'Brown', 2, 1),
+    (3,'Mike', 'Allen', 3, 1),
+    (4,'Raymond','Blanks', 4, 1),
+    (5,'Pritesh', 'Shah', 5, NULL),
+    (6,'Nicole', 'Williams',6, 5),
+    (7,'Ashley', 'Quiroz', 7, NULL),
+    (8,'Sarah', 'Landers', 8, 7),
+    (9,'Vikas', 'Agarwal', 9, NULL);
+    
