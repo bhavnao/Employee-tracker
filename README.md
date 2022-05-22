@@ -23,3 +23,31 @@ THEN I am prompted to enter the name, salary, and department for the role and th
 THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
 * WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
+
+## Usage :
+* Clone this repository to use this application on local machine.
+* To install necessary dependencies, run the following command :
+npm i
+* The application will be invoked with the following command : 
+node server.js
+* After running above command, user is presented with series of options to manage employee databse.
+
+## Features 
+* MySql npm package is used to connect to database and perform queries.
+
+* Inquirer npm package is used to interact with the user via the command-line.
+
+* Console.table is used to print MySQL rows to the console.
+
+* Asciiart-logo NPM package is used to add some visual flare to the main logo.
+
+* User can view all employees,department, roles, employees by department, employees by manager.
+
+* Created three tables - department, role and employee. These tables are connected with primary and foreign keys.Included a `schema.sql` to hold databse schema and `seed.sql` file to pre-populate database. This makes development of individual features much easier.
+
+## Screenshot and Demo Link
+![Database Schema](./assets/schema.png)
+
+## Github Repo
+https://github.com/bhavnao/Employee-tracker
+
