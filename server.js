@@ -192,7 +192,7 @@ async function addEmployee(){
     }));
     managerChoices.unshift({ name: "None", value: null });
   
-    const { managerId } = await prompt({
+    const { managerId } = await inquirer.prompt({
       type: "list",
       name: "managerId",
       message: "Who is the employee's manager?",

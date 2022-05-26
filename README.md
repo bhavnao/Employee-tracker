@@ -45,9 +45,13 @@ node server.js
 
 * Created three tables - department, role and employee. These tables are connected with primary and foreign keys.Included a `schema.sql` to hold databse schema and `seed.sql` file to pre-populate database. This makes development of individual features much easier.
 
-## Screenshot and Demo Link
+## Screenshot 
 ![Database Schema](./assets/schema.png)
 
-## Github Repo
-https://github.com/bhavnao/Employee-tracker
+## Github Repo and Demo Link
+* https://github.com/bhavnao/Employee-tracker
+
+
+* https://drive.google.com/file/d/16e6fb2RGanMGO6pTkaoQ4RL7FeT-hrKA/view?usp=sharing
+
 
