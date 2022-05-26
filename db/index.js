@@ -34,14 +34,14 @@ class DB {
      // Find all roles, join with departments to display the department name
   findAllRoles() {
     return this.connection.query(
-      "SELECT role.id, role.title, department.name AS department, role.salary FROM role LEFT JOIN department on role.department_id = department.id;"
+      "SELECT role.id, role.title AS role, department.name AS department, role.salary FROM role LEFT JOIN department on role.department_id = department.id;"
     );
   }
 
   // Find all departments
   findAllDepartments() {
     return this.connection.query(
-      "SELECT department.id, department.name FROM department "
+      "SELECT department.id, department.name as department FROM department "
     );
   }
 
@@ -108,8 +108,6 @@ class DB {
       departmentId
     );
   }
-
-  
 
 
 }
